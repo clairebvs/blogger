@@ -19,6 +19,7 @@ describe "user can edit an article" do
       expect(page).to_not have_content("Title 1")
       expect(page).to have_content("Different Body")
       expect(page).to_not have_content("Body 1")
+      # expect(page).to have_content("Article #{article.title} Updated!")
     end
   end
 end
